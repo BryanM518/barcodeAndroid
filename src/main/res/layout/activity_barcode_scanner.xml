@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarcodeScannerActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:id="@+id/container">
+
+        <androidx.camera.view.PreviewView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/previewview" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </androidx.camera.view.PreviewView>
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="360dp"
+        android:layout_height="607dp"
+        android:background="@drawable/background_image"
+        app:layout_anchor="@+id/container"
+        app:layout_anchorGravity="center"></ImageView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
